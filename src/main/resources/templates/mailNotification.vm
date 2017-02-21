@@ -1,0 +1,24 @@
+<html>
+	<body>
+		
+		<p>
+			Saludos de - ${mailInfo.mailSender.name}
+		</p>
+		<p>
+			Estimado Sr(a).
+		</p>
+		<p>
+			 ${mailInfo.generalText}
+		</p>
+		<div id="contentDiv">
+            
+            <br></br>
+            #foreach( $textInfo in $mailInfo.textList )
+            <p>
+                $textInfo
+            </p>
+            #end
+        </div>
+	</body>
+
+</html>
